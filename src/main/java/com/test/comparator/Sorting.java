@@ -1,5 +1,6 @@
 package com.test.comparator;
 
+import com.test.base.list.BaseList;
 import com.test.entity.Employee;
 
 import java.util.Collections;
@@ -9,7 +10,7 @@ import java.util.List;
 /**
  * Sorting example with different comparator
  */
-public class Sorting extends BaseSorting {
+public class Sorting extends BaseList {
     public void sortByAge1(List<Employee> employees) {
         //sort by age
         Collections.sort(employees, new Comparator<Employee>() {
@@ -47,10 +48,12 @@ public class Sorting extends BaseSorting {
         //sort by age using labmda comparator
         Collections.sort(employees, (e1, e2) -> e1.getAge() - e2.getAge());
     }
+
     public void sortByName2(List<Employee> employees) {
         //sort by name using labmda comparator
         Collections.sort(employees, (e1, e2) -> e1.getName().compareTo(e2.getName()));
     }
+
     public void sortBySal2(List<Employee> employees) {
         //sort by salary using labmda comparator
         Collections.sort(employees, (e1, e2) -> e1.getSalary().compareTo(e2.getSalary()));

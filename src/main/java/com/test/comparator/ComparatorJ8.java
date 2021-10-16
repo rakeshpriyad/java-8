@@ -1,15 +1,15 @@
 package com.test.comparator;
 
+import com.test.base.list.BaseList;
 import com.test.entity.Employee;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 /**
  * Sorting example with different comparator
  */
-public class ComparatorJ8 extends BaseSorting {
+public class ComparatorJ8 extends BaseList {
     /*******************************************************************java8 plus**********************************/
 
     public void sortByAge(List<Employee> employees) {
@@ -29,7 +29,7 @@ public class ComparatorJ8 extends BaseSorting {
 
     public void sortBySalReversed(List<Employee> employees) {
         //sort by salary using labmda comparator
-        Comparator<Employee> salaryComparator = (e1, e2)-> e1.getSalary().compareTo(e2.getSalary());
+        Comparator<Employee> salaryComparator = (e1, e2) -> e1.getSalary().compareTo(e2.getSalary());
         employees.sort(salaryComparator.reversed());
     }
 
