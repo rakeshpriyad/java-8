@@ -1,4 +1,5 @@
-Performance Management Interview question
+#Performance Management Interview question
+
 1. How to preprocess 20 GB file before putting into db
 2. How to sort the file of 20 GB in 500 MB RAM?
 4. How to trace process in unix?

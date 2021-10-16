@@ -1,20 +1,15 @@
-"# Spring Boot Interview questions"
+# Spring Boot Interview questions
 
 1. Explain the Microservice Architecture
 3. How microservices communicate with each other.
 4. Ho you handle security in microservices. 
-5. Communication between microservices?
-6. Inter-communication between microservices?
 7. What is 12 factor app?
 8. Explain the design of microservice if we have to display Account Summary by just logging in
    Account Service
    Account Summary Service
    User Service
-9. Inter-communication using api gateway, etc
 10. Why did you choose technology as Spring boot/Microservice
 11. Why did you decide to use Spring Boot ?
-12. Explain Microservices architecture
-13. Microservice communication
 14. How to handler if a spring boot has to be deployed on prod in tomcat, and local in Embedded .
 15. How to do impact analysis, if field credit card no will need to increase from 10 to 12 digits
 16. Design an application of Credit Card, with asynchronous feature(Kafka)

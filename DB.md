@@ -1,4 +1,4 @@
-*DB Interview Questions*
+#DB Interview Questions
 
 DB:
 1. What is ACID property in a database?

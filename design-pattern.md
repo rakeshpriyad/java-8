@@ -1,4 +1,4 @@
-"# Design Pattern Interview questions"
+# Design Pattern Interview questions
 1. How to do impact analysis, if field credit card no will need to increase from 10 to 12 digits
 2. Design an application of Credit Card, with asynchronous feature(Kafka)
 3. Design Lift Maintenance system (Elevator management).
