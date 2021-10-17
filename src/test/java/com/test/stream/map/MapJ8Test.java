@@ -22,4 +22,22 @@ public class MapJ8Test {
         mapJ8.displayPerson(personList);
         Assert.assertNotNull(personList);
     }
+
+    @Test
+    public void convertFromListTosMapTest() {
+        MapJ8 mapJ8 = new MapJ8();
+         mapJ8.convertListToMap(mapJ8.getEmployees());
+    }
+
+    @Test
+    public void convertFromListTosMap1Test() {
+        MapJ8 mapJ8 = new MapJ8();
+        mapJ8.convertListToMap1(mapJ8.getEmployees());
+    }
+
+    @Test
+    public void convertFromListTosMapSortedTest() {
+        MapJ8 mapJ8 = new MapJ8();
+        mapJ8.convertListToMapSorted(mapJ8.getEmployees());
+    }
 }

@@ -1,26 +1,30 @@
 package com.test.stream.flatmap;
 
-import com.test.entity.Person;
-import com.test.stream.map.MapJ8;
-import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.Arrays;
 
 public class FlatMapJ8Test {
     @Test
     public void convertTosStringListTest() {
-        MapJ8 mapJ8 = new MapJ8();
-        List<String> empNameList = mapJ8.convertTosStringList(mapJ8.getEmployees());
-        mapJ8.displayNames(empNameList);
-        Assert.assertNotNull(empNameList);
+        FlatMapJ8 flatMapJ8 = new FlatMapJ8();
+        String[] str = flatMapJ8.flatStringArray();
+        System.out.println(str);
+        Arrays.stream(str).forEach(System.out::println);
     }
 
     @Test
-    public void convertTosOtherListTest() {
-        MapJ8 mapJ8 = new MapJ8();
-        List<Person> personList = mapJ8.convertToOtherList(mapJ8.getEmployees());
-        mapJ8.displayPerson(personList);
-        Assert.assertNotNull(personList);
+    public void flatMapSumOfLineItems() {
+        FlatMapJ8 flatMapJ8 = new FlatMapJ8();
+        BigDecimal sumOfLineItem = flatMapJ8.sumOfOrderLineItem();
+        System.out.println(sumOfLineItem);
+    }
+
+    @Test
+    public void flatMapSumOfOrder() {
+        FlatMapJ8 flatMapJ8 = new FlatMapJ8();
+        BigDecimal sumOfOrder = flatMapJ8.sumOfOrder();
+        System.out.println(sumOfOrder);
     }
 }

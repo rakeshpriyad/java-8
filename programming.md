@@ -21,5 +21,14 @@ CompletableFuture<String> completableFuture
 7. Write a program to detect loop and break the loop in linked list.
 8. Write a program to rotate the array.
 9. How to find the height of tree in non-recursive manner.
+11. find the lowest common ancestor
+12. Check if the binary tree is subtree of another tree
+13. Tree traversal Inorder, Preorder, Post order
+14. find the max depth of binary search tree
+15. find the min/max value of binary search tree
+16. searching element in BST
+17. Has path sum , check if given sum exist in path from root to leaf any path
+18. Insert into bst program
+ 
 
 	
